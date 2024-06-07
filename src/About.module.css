@@ -1,0 +1,168 @@
+.aboutContainer {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  .banner {
+    position: relative;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+  }
+  
+  .tagline {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 3vw;
+    font-weight: bold;
+    max-width: 80%;
+  }
+  
+  .headingIcon {
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+  }
+  
+  .headingContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .content {
+    margin-top: 50px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .restContent {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: center;
+  }
+  
+  .boxHeading {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .aboutSection {
+    width: 100%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .squareBox {
+    width: 450px;
+    height: auto;
+    background-color: #f9f9f9;
+    padding: 40px;
+    border: 1px solid lightgrey;
+    gap: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .sectionContainer {
+    display: grid;
+    gap: 30px;
+  }
+  
+  .approachSection {
+    width: 100%;
+    background-color: #B84234;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .approachContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .imageContainer {
+    flex: 1;
+    position: relative;
+    margin-right: 20px;
+  }
+  
+  .approachImage {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .quote {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: #ddd5d5;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 20px;
+    width: 80%;
+  }
+  
+  .quote .author {
+    text-align: right;
+    font-size: 12px;
+    margin-top: 10px;
+  }
+  
+  .textContainer {
+    flex: 1;
+    padding-left: 20px;
+    color: white;
+  }
+  
+  .para {
+    border: 1px solid lightgray;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  h1, h2 {
+    color: #151414;
+    text-align: center;
+  }
+  
+  h3 {
+    color: #B84234;
+    text-align: center;
+  }
+  
+  p {
+    color: #1d1c1c;
+  }
+  
+  .valuesSection {
+    width: 100%;
+    background-color: #f9f9f9;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  

@@ -1,0 +1,128 @@
+.Header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #b8685f;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  
+ 
+  
+  margin: 20px;
+}
+
+.LogoContainer {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  
+  border-radius: 10px;
+ 
+  
+}
+
+.Logo {
+  height: 150px;
+  ;
+  
+  
+}
+
+.NavContainer {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+ 
+  margin-right: 20px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+ 
+
+}
+
+.SignUpButton {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-left: 15px;
+  margin-right: 3px;
+  gap: 5px;
+  height: 70px;
+  width: 220px;
+  font-size: 1.2rem;
+}
+
+
+
+.SignUpButton:hover{
+  border :1px solid #B84234 ;
+}
+
+.LoginIcon {
+  width: 40px;
+  background-color: transparent;
+
+}
+
+.LoginText {
+  color:#B84234 ;
+  font-weight: bold;
+  
+}
+
+.HeaderItem {
+  background-color: #B84234;
+  color: white;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 10px 15px;
+  flex: 1;
+  text-align: center;
+  height: 70px;
+  width: 170px;
+}
+
+.HeaderItem:hover {
+  text-decoration: underline;
+}
+
+.DropdownContainer {
+  position: relative;
+  display: inline-block;
+}
+
+.DropdownContent {
+  display: block;
+  position: absolute;
+  align-items: center;
+  min-width: 200px;
+ 
+  z-index: 1;
+  background-color: transparent;
+}
+
+.DropdownItem {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  background-color: #B84234;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  margin-top: 3px;
+  width: 170px;
+}
+
+.DropdownItem:hover {
+  background-color: #9e3c2e;
+}
