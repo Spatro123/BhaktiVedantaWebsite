@@ -9,11 +9,18 @@ import vision from "./icon1.png";
 import mission from "./mission (1).png";
 import leadership from "./ic1.png";
 import approachImage from "./blog1.png";
+import h1 from "./integrity.png";
+import h2 from "./compassion (1).png";
+import h3 from "./excellence.png";
+import h4 from "./learning.png";
+import h5 from "./services.png";
+import h6 from "./spiritual.png"
+import Header from "./Header";
 
 const About = () => {
   return (
     <div className={classes.aboutContainer}>
-   
+      <Header />
       <div
         className={classes.banner}
         style={{ backgroundImage: `url(${pic})` }}
@@ -22,10 +29,10 @@ const About = () => {
           Fostering Growth and Dignity in Every Life We Touch
         </div>
       </div>
-      <div className={classes.content}>
+     
         <section className={classes.aboutSection}>
-          <div className={classes.sectionContainer}>
-            <div className={classes.headingContainer}>
+          
+            <div className={classes.headingContainer1}>
               <img
                 src={about}
                 alt="About Us Icon"
@@ -33,7 +40,7 @@ const About = () => {
               />
               <h2>About Us</h2>
             </div>
-            <div className={classes.sectionContent}>
+            <div className={classes.sectionContent1}>
               <p>
                 Welcome to the Bhaktivedanta International Academy for Applied
                 Spiritual Technology, where we are dedicated to empowering
@@ -44,9 +51,11 @@ const About = () => {
                 skills for personal and professional success.
               </p>
             </div>
-          </div>
+          
         </section>
-      </div>
+      
+
+
       <div className={classes.restContent}>
         <div className={classes.boxHeading}>
           <h1>More About Us</h1>
@@ -144,6 +153,7 @@ const About = () => {
             </div>
           </div>
         </section>
+
         <section className={classes.approachSection}>
           <h1>Our Approach</h1>
           <div className={classes.approachContent}>
@@ -166,6 +176,7 @@ const About = () => {
             </div>
             <div className={classes.textContainer}>
               <div className={classes.para}>
+              
                 <h3>Objectives</h3>
                 <p>
                   To empower youth and women through employability skill
@@ -173,20 +184,26 @@ const About = () => {
                 </p>
               </div>
               <div className={classes.para}>
+              
+                
                 <p>
                   To foster a culture of innovation, creativity, and
                   entrepreneurship.
                 </p>
               </div>
               <div className={classes.para}>
+              
+                
                 <p>To promote spiritual awareness and personal growth.</p>
               </div>
               <div className={classes.para}>
+             
                 <p>
                   To cultivate ethical leadership and social responsibility.
                 </p>
               </div>
               <div className={classes.para}>
+             
                 <p>
                   To create a supportive community of like-minded individuals
                   committed to positive change.
@@ -198,38 +215,11 @@ const About = () => {
         <section className={classes.squareBox}>
           <div className={classes.sectionContainer}>
             <div className={classes.headingContainer}>
-              <h2>Integrity</h2>
-            </div>
-            <div className={classes.sectionContent}>
-              <p>
-                Integrity is at the heart of our institution. We are committed
-                to honesty, transparency, and ethical conduct in all our
-                interactions. We hold ourselves to the highest standards of
-                integrity, ensuring that we always act with integrity and honor
-                our commitments.
-              </p>
-            </div>
-          </div>
-        </section>
-        <section className={classes.squareBox}>
-          <div className={classes.sectionContainer}>
-            <div className={classes.headingContainer}>
-              <h2>Compassion</h2>
-            </div>
-            <div className={classes.sectionContent}>
-              <p>
-                Compassion lies at the core of our mission. We believe in the
-                inherent worth and dignity of every individual, and we strive to
-                treat others with kindness, empathy, and respect. We are
-                dedicated to creating a supportive and inclusive environment
-                where everyone feels valued and supported.
-              </p>
-            </div>
-          </div>
-        </section>
-        <section className={classes.squareBox}>
-          <div className={classes.sectionContainer}>
-            <div className={classes.headingContainer}>
+              <img
+                src={h3}
+                alt="Excellence Icon"
+                className={classes.headingIcon}
+              />
               <h2>Excellence</h2>
             </div>
             <div className={classes.sectionContent}>
@@ -246,6 +236,11 @@ const About = () => {
         <section className={classes.squareBox}>
           <div className={classes.sectionContainer}>
             <div className={classes.headingContainer}>
+              <img
+                src={h4}
+                alt="Learning Icon"
+                className={classes.headingIcon}
+              />
               <h2>Lifelong Learning</h2>
             </div>
             <div className={classes.sectionContent}>
@@ -262,6 +257,11 @@ const About = () => {
         <section className={classes.squareBox}>
           <div className={classes.sectionContainer}>
             <div className={classes.headingContainer}>
+              <img
+                src={h5}
+                alt="Services Icon"
+                className={classes.headingIcon}
+              />
               <h2>Service</h2>
             </div>
             <div className={classes.sectionContent}>
@@ -278,6 +278,11 @@ const About = () => {
         <section className={classes.squareBox}>
           <div className={classes.sectionContainer}>
             <div className={classes.headingContainer}>
+              <img
+                src={h6}
+                alt="Spiritual Icon"
+                className={classes.headingIcon}
+              />
               <h2>Spirituality</h2>
             </div>
             <div className={classes.sectionContent}>
@@ -297,6 +302,7 @@ const About = () => {
           </div>
         </section>
       </div>
+      <div className={classes.stripe}>WE BELIEVE IN GROWTH</div>
       <Footer />
     </div>
   );

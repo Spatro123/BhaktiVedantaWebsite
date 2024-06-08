@@ -3,7 +3,7 @@ import classes from "./App.module.css";
 import Header from './Header';
 import Footer from './Footer';
 import logo from './logo.png';
-import p1 from './11.png';
+import p1 from './1.png';
 import icon1 from './icon1.png';
 import icon2 from './icon2.png';
 import icon3 from './icon3.png';
@@ -22,15 +22,17 @@ import blog2 from './blog 3.jpg';
 function App() {
   return (
     <div className={classes.App}>
-    
-
+  
+<Header  />
       <div className={classes.block1}>
         <div className={classes.TextContent}>
           <h1>Skill Up for Success</h1>
           <h2>Holistic Employability Skill Development through Nurturing Potential, Inspiring Change</h2>
           <button>REGISTER NOW</button>
         </div>
+        <div className={classes.profile}>
         <img src={p1} className={classes.Image} alt="Illustration" />
+        </div>
       </div>
 
       <div className={classes.block3}>
@@ -187,7 +189,7 @@ function App() {
         <p>Become a Part of Our Thriving Community</p>
         <button className={classes.KnowMoreButton}>KNOW MORE</button>
       </div>
-   
+   <Footer />
     </div>
   );
 }
