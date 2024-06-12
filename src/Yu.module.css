@@ -1,0 +1,136 @@
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  header h1 {
+    font-size: 36px;
+    color: black;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  header h2 {
+    font-size: 24px;
+    color: grey;
+    margin-bottom: 20px;
+    text-align: center;
+    animation: fadeIn 3s ease-in-out;
+  }
+  
+  .banner {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+  .bannerImage {
+    width: 100%;
+    height: auto;
+  }
+  
+  .bannerText {
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    color: #B84234;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+  .introText {
+    font-size: 25px;
+    color: #B84234;
+    text-align: center;
+    margin: 20px 0;
+    animation: fadeIn 3s ease-in-out;
+  
+    padding: 10px;
+  }
+  
+  .content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .block {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    transition: transform 0.3s ease;
+    box-sizing: border-box;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .fullWidthBlock {
+    grid-column: span 3;
+  }
+  
+  .block:hover {
+    transform: translateY(-10px);
+  }
+  
+  .block h3 {
+    font-size: 24px;
+    color: #B84234;
+  }
+  
+  .block p {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  footer {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  footer h3 {
+    font-size: 24px;
+    color: #B84234;
+  }
+  
+  footer p {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .icon {
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .eventImage {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  @media (max-width: 1024px) {
+    .content {
+      grid-template-columns: 1fr;
+    }
+  
+    .fullWidthBlock {
+      grid-column: span 1;
+    }
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  

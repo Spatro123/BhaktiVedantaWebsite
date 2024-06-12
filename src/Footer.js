@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import classes from './Footer.module.css';
 import t1 from "./twitter (1).png";
 import t2 from "./whatsapp (1).png";
@@ -5,8 +6,7 @@ import t3 from "./youtube (3).png";
 import t4 from "./instagram (1).png";
 import t5 from "./facebook (2).png";
 import t6 from "./linkedin (1).png";
-import t7 from "./right-arrow (1).png";
-import React, { useState } from "react";
+import t7 from "./right-arrow.png";
 
 function Footer() {
   const [email, setEmail] = useState("");
@@ -79,29 +79,29 @@ function Footer() {
       </div>
       <div className={classes.footerSections}>
         <div className={classes.footerSection}>
-          <h2>COMPANY</h2>
+          <h2>HOME</h2>
           <p>About Us</p>
           <p>Vision</p>
           <p>Mission</p>
         </div>
         <div className={classes.footerSection}>
-          <h2>PORTFOLIO</h2>
+          <h2>OUR PROGRAMS</h2>
           <p>Applications</p>
           <p>Projects</p>
           <p>Pre Engineered Building</p>
         </div>
         <div className={classes.footerSection}>
-          <h2>PEOPLE</h2>
+          <h2>OUR IMPACTS</h2>
           <p>Team</p>
           <p>Vision</p>
           <p>Careers</p>
         </div>
         <div className={classes.footerSection}>
-          <h2>SOCIETY</h2>
+          <h2>OUR PARTNERS</h2>
           <p>Brighter Futures</p>
         </div>
         <div className={classes.footerSection}>
-          <h2>NEWSROOM</h2>
+          <h2>RESOURCES</h2>
           <p>Press Releases</p>
         </div>
         <div className={classes.footerSection}>
@@ -110,10 +110,10 @@ function Footer() {
         </div>
         <div className={classes.footerSection}>
           <h2>MISCELLANEOUS</h2>
-          <p>CONTACT US</p>
-          <p>DISCLAIMER</p>
-          <p>STATUTORY DOCUMENTATION</p>
-          <p>POLICIES</p>
+          <p>Contact Us</p>
+          <p>Disclaimer</p>
+          <p>Statutory Documentation</p>
+          <p>Policies</p>
         </div>
       </div>
       <div className={classes.footerBottom}>

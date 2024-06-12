@@ -1,0 +1,218 @@
+
+.ourprogram {
+    max-width: 1400px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+.header {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.banner {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.headerContent {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #a49898;
+    
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.headerContent h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.headerContent p {
+    font-size: 1.5rem;
+    color: grey;
+}
+
+
+.pointsSection {
+    margin: 0 auto;
+    padding: 40px 0;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    height: auto;
+}
+
+.pointsSection h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+     color: #B84234;
+}
+
+.pointsSection p {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+}
+
+
+.pointsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.pointCard {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    height: fit-content;
+}
+
+.pointCard:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.pointImage {
+    width: 100%;
+    height: 200px;
+  
+}
+
+.iconAndText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.pointIcon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.pointText {
+    text-align: center;
+   
+}
+
+.pointText h3 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.pointText p {
+    font-size: 1em;
+    color: #555;
+}
+.additionalContent {
+    margin: 40px auto;
+    max-width: 1400px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #B84234;
+   
+    padding: 10px;
+}
+
+.bottomCardContent{
+    padding: 10px;
+    align-items: center;
+}
+.bottomCard {
+    width: calc(50% - 20px);
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px; 
+}
+
+.bottomCardsContainer {
+    display: flex;
+    justify-content: space-between; 
+    margin-top: 40px; 
+}
+
+.bottomCard {
+    width: 48%; 
+}
+
+.bottomCardContent h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #b8685f;
+    text-align: center;
+}
+
+.bottomCardContent p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.learnMoreButton {
+    background-color: #B84234;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    align-items: center;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.learnMoreButton:hover {
+    background-color: #a3281f;
+}
+
+.bottomCardImage {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+
+
+@media (max-width: 768px) {
+    .headerContent h1 {
+        font-size: 2.5em;
+    }
+
+    .headerContent p {
+        font-size: 1em;
+    }
+
+    .pointsSection h2 {
+        font-size: 1.8em;
+    }
+
+    .pointsSection p {
+        font-size: 1em;
+    }
+
+    .pointContent {
+        padding: 10px;
+    }
+}

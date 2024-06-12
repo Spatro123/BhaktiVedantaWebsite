@@ -1,8 +1,6 @@
 import React from "react";
 import classes from "./About.module.css";
-import pic from "./banner.jpg";
-import Header from "./Header";
-import Footer from "./Footer";
+import pic from "./Aboutus.jpg";
 import history from "./history.png";
 import about from "./ic.png";
 import vision from "./icon1.png";
@@ -15,18 +13,19 @@ import h3 from "./excellence.png";
 import h4 from "./learning.png";
 import h5 from "./services.png";
 import h6 from "./spiritual.png"
-import Header from "./Header";
+
 
 const About = () => {
   return (
     <div className={classes.aboutContainer}>
-      <Header />
+     
       <div
         className={classes.banner}
         style={{ backgroundImage: `url(${pic})` }}
       >
         <div className={classes.tagline}>
-          Fostering Growth and Dignity in Every Life We Touch
+        <h2>About Us</h2>
+         <p>Fostering Growth and Dignity in Every Life We Touch</p>
         </div>
       </div>
      
@@ -38,7 +37,7 @@ const About = () => {
                 alt="About Us Icon"
                 className={classes.headingIcon}
               />
-              <h2>About Us</h2>
+              
             </div>
             <div className={classes.sectionContent1}>
               <p>
@@ -90,7 +89,7 @@ const About = () => {
           <div className={classes.sectionContainer}>
             <div className={classes.headingContainer}>
               <img
-                src={vision}
+                src={leadership}
                 alt="Vision Icon"
                 className={classes.headingIcon}
               />
@@ -135,7 +134,7 @@ const About = () => {
           <div className={classes.sectionContainer}>
             <div className={classes.headingContainer}>
               <img
-                src={leadership}
+                src={vision}
                 alt="Leadership Icon"
                 className={classes.headingIcon}
               />
@@ -303,7 +302,7 @@ const About = () => {
         </section>
       </div>
       <div className={classes.stripe}>WE BELIEVE IN GROWTH</div>
-      <Footer />
+    
     </div>
   );
 };

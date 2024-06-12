@@ -18,15 +18,25 @@
 .tagline {
   position: absolute;
   top: 50%;
-  left: 40%;
+  left: 30%;
   transform: translate(-50%, -50%);
   padding: 10px 20px;
   border-radius: 5px;
   text-align: center;
-  font-size: 3vw;
-  font-weight: bold;
-  max-width: 80%;
-  color: rgb(165, 141, 109);
+   max-width: 80%;
+ 
+}
+
+.tagline h2{
+
+  font-size: 4rem;
+  color: #b84234;
+}
+
+.tagline p{
+
+  font-size: 1.5rem;
+  color: grey;
 }
 
 .headingIcon {
@@ -235,7 +245,7 @@ p {
 
 @media (max-width: 768px) {
   .banner {
-    height: 200px;
+    height: 400px;
   }
 
   .tagline {
