@@ -1,8 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import classes from './Blog.module.css';
-import blog from './blog1.png';
-import blog1 from './blog2.png';
-import blog2 from './blog 3.jpg';
+import blog from './spiritual.jpg';
+import blog1 from './meditation.jpg';
+import blog2 from './pract.jpg';
 import banner from './blog (2).jpg';
 
 const Blog = () => {
@@ -28,32 +29,36 @@ const Blog = () => {
         <div className={classes.post}>
           <img src={blog} alt="Post 1" className={classes.postImage} />
           <div className={classes.postContent}>
-            <span className={classes.postTag}>Newsletter</span>
             <span className={classes.postDate}>October 18, 2023 - 7 min read</span>
             <h2>The Future of EHS: Emerging Trends to Watch</h2>
             <p>Technological advancements, data analytics, and industry disruptions. Navigating the evolving landscape...</p>
+            <Link to="/blog1" className={classes.readMore}>Read More</Link>
           </div>
         </div>
         <div className={classes.post}>
           <img src={blog1} alt="Post 2" className={classes.postImage} />
           <div className={classes.postContent}>
-            <span className={classes.postTag}>Tips</span>
             <span className={classes.postDate}>October 18, 2023 - 7 min read</span>
             <h2>Mental Health Matters: EHS Strategies for Employee Well-Being</h2>
             <p>Addressing stress, burnout, and mental health in the workplace. A holistic approach to support employee...</p>
+            <Link to="/blog2" className={classes.readMore}>Read More</Link>
           </div>
         </div>
         <div className={classes.post}>
           <img src={blog2} alt="Post 3" className={classes.postImage} />
           <div className={classes.postContent}>
-            <span className={classes.postTag}>Insight</span>
             <span className={classes.postDate}>October 18, 2023 - 7 min read</span>
             <h2>Creating a Safety Culture: EHS Leadership Insights</h2>
             <p>Empowering your team to prioritize safety every day, leadership strategies, training, and cultivating...</p>
+            <Link to="/blog3" className={classes.readMore}>Read More</Link>
           </div>
         </div>
-        {/* Additional posts here */}
       </div>
+      <div className={classes.ThrivingCommunity}>
+        <p>Become a Part of Our Thriving Community</p>
+        <button className={classes.KnowMoreButton}>JOIN NOW</button>
+      </div>
+        
     </div>
   );
 };

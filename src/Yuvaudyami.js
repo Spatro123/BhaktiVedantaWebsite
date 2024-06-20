@@ -30,19 +30,16 @@ function App() {
       </header>
       <section className={classes.content}>
         <div className={classes.block}>
-          <img src={event1} alt="Event 1" className={classes.eventImage} />
           <img src={l1} alt="Icon 1" className={classes.icon} />
           <h3>Empowering Youth</h3>
           <p>Our mission is to empower youth to become leaders of tomorrow by fostering innovation, creativity, and resilience. Through our holistic approach to skill development, we aim to unlock the potential of every participant and inspire them to pursue their passions and dreams.</p>
         </div>
         <div className={classes.block}>
-          <img src={event2} alt="Event 2" className={classes.eventImage} />
           <img src={l2} alt="Icon 2" className={classes.icon} />
           <h3>Entrepreneurship Education</h3>
           <p>We believe in the power of entrepreneurship to drive economic growth and social change. Our entrepreneurship education programs provide aspiring entrepreneurs with the guidance, resources, and support they need to turn their ideas into successful ventures. From business planning to market research to financial management, we cover all aspects of starting and growing a business.</p>
         </div>
         <div className={classes.block}>
-          <img src={event3} alt="Event 3" className={classes.eventImage} />
           <img src={l3} alt="Icon 3" className={classes.icon} />
           <h3>Employability Skills</h3>
           <p>In addition to entrepreneurship education, we also focus on enhancing employability skills to prepare youth for the job market. Our programs cover essential skills such as communication, teamwork, critical thinking, and leadership, ensuring that participants are well-equipped to succeed in any professional setting.</p>
@@ -54,10 +51,14 @@ function App() {
         </div>
       </section>
       <footer>
-        <img src={l5} alt="Icon 5" className={classes.icon} />
+        <img src={l5} alt="Icon 5" className={classes.icon1} />
         <h3>Join Us</h3>
         <p>Join us at Bhaktivedanta Yuva Udyami Chetana Kendra and embark on a journey of self-discovery, innovation, and transformation. Together, let's fuel futures, empower youth, and create a brighter tomorrow for generations to come.</p>
       </footer>
+      <div className={classes.ThrivingCommunity}>
+        <p>Become a Part of Our Thriving Community</p>
+        <button className={classes.KnowMoreButton}>JOIN NOW</button>
+      </div>
     </div>
   );
 }

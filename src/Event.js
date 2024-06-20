@@ -10,10 +10,10 @@ const EventLandingPage = () => {
         <div className={classes.banner}>
           <img src={banner} alt="Event Banner" className={classes.bannerImage} />
           <div className={classes.bannerText}>
-            <h1>Event Landing Page Templates (Handpicked)</h1>
+            <h1>Event Landing Page Templates </h1>
             <div className={classes.author}>
               <span>By Surjith S M</span>
-              <span>— July 31, 2015</span>
+             
             </div>
           </div>
         </div>
@@ -31,7 +31,7 @@ const EventLandingPage = () => {
             <h2>INSPIRE. CREATE. REPEAT.</h2>
             <p>August 21st - 22nd 2016</p>
             <p>Stockholm, Sweden</p>
-            <button className={classes.ctaButton}>RESERVE MY SEAT</button>
+            <button className={classes.ctaButton}>COMING SOON ...</button>
             <p>Gather is a responsive website template for events, conferences, meetups, webinars etc. This template can be used...</p>
             <div className={classes.countdown}>
               <div>
@@ -60,7 +60,7 @@ const EventLandingPage = () => {
             <h2>INSPIRE. CREATE. REPEAT.</h2>
             <p>August 21st - 22nd 2016</p>
             <p>Stockholm, Sweden</p>
-            <button className={classes.ctaButton}>RESERVE MY SEAT</button>
+            <button className={classes.ctaButton}>COMING SOON ...</button>
             <p>Gather is a responsive website template for events, conferences, meetups, webinars etc. This template can be used...</p>
             <div className={classes.countdown}>
               <div>
@@ -84,12 +84,16 @@ const EventLandingPage = () => {
         </div>
       </div>
       <footer className={classes.footer}>
-        <p>7 COLOR THEMES 8 VARIATIONS</p>
+        <p>SPONSERED BY </p>
         <div className={classes.sponsors}>
           <img src="paypal.png" alt="PayPal" />
           <img src="eventbrite.png" alt="Eventbrite" />
         </div>
       </footer>
+      <div className={classes.ThrivingCommunity}>
+        <p>Become a Part of Our Thriving Community</p>
+        <button className={classes.KnowMoreButton}>JOIN NOW</button>
+      </div>
     </div>
   );
 };

@@ -26,19 +26,16 @@ function App() {
       </header>
       <section className={classes.content}>
         <div className={classes.block}>
-          <img src={event1} alt="Event 1" className={classes.eventImage} />
           <img src={l1} alt="Icon 1" className={classes.icon} />
           <h3>Awakening Spirits</h3>
           <p>Our mission is to awaken the dormant spiritual consciousness within each individual and facilitate a deeper connection with the divine. Through spiritual practices, meditation, and introspection, we help participants explore the depths of their souls and uncover the eternal truths that lie within.</p>
         </div>
         <div className={classes.block}>
-          <img src={event2} alt="Event 2" className={classes.eventImage} />
           <img src={l2} alt="Icon 2" className={classes.icon} />
           <h3>Shaping Futures</h3>
           <p>We believe that spiritual enlightenment is the key to shaping a brighter future for individuals and society as a whole. Our programs empower participants to transcend their limitations, overcome obstacles, and manifest their highest potential in all areas of life. By instilling values of compassion, integrity, and service, we inspire individuals to become agents of positive change in the world.</p>
         </div>
         <div className={classes.block}>
-          <img src={event3} alt="Event 3" className={classes.eventImage} />
           <img src={l3} alt="Icon 3" className={classes.icon} />
           <h3>Enlightening Souls</h3>
           <p>At Bhaktivedanta Adhyatmik Jagruti Kendra, we are dedicated to enlightening souls and illuminating the path to self-realization. Through the study of ancient wisdom, sacred texts, and spiritual teachings, we provide participants with the knowledge and tools they need to embark on a journey of self-discovery and inner transformation.</p>
@@ -50,10 +47,14 @@ function App() {
         </div>
       </section>
       <footer>
-        <img src={l5} alt="Icon 5" className={classes.icon} />
+        <img src={l5} alt="Icon 5" className={classes.icon1} />
         <h3>Join Us</h3>
         <p>Join us at Bhaktivedanta Adhyatmik Jagruti Kendra and embark on a profound journey of spiritual awakening, personal growth, and enlightenment. Together, let's awaken spirits, shape futures, and enlighten souls, as we strive to create a world filled with peace, harmony, and spiritual wisdom.</p>
       </footer>
+      <div className={classes.ThrivingCommunity}>
+        <p>Become a Part of Our Thriving Community</p>
+        <button className={classes.KnowMoreButton}>JOIN NOW</button>
+      </div>
     </div>
   );
 }

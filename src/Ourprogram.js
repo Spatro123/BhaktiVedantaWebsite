@@ -1,8 +1,6 @@
-// src/OurProgram.js
 import React from 'react';
 import { Link } from 'react-router-dom';
 import classes from './ourprogram.module.css';
-import banner from './our programs (2).jpg';
 import p1 from './p1.png';
 import p2 from './p2.png';
 import p3 from './p.png';
@@ -34,35 +32,34 @@ import team1 from './team1.jpg';
 
 const OurProgram = () => {
     const employabilityPoints = [
-        { img: event1, icon: p1, text: "Communication Skills: Enhancing verbal and written communication skills for effective workplace interactions." },
-        { img: event2, icon: p2, text: "Critical Thinking: Developing analytical and problem-solving skills to tackle complex challenges." },
-        { img: event3, icon: p3, text: "Teamwork and Collaboration: Fostering collaboration and teamwork abilities to achieve common goals." },
-        { img: success1, icon: p4, text: "Leadership and Management: Cultivating leadership qualities and management capabilities for career advancement." },
-        { img: success2, icon: p5, text: "Technical Skills: Providing training in industry-specific technical skills and tools relevant to various sectors." },
-        { img: success3, icon: p6, text: "Problem Solving: Equipping individuals with critical thinking and analytical skills to tackle challenges with confidence and creativity." },
-        { img: blog, icon: p7, text: "Emotional Intelligence: Cultivating self-awareness and empathy to navigate interpersonal relationships and foster a harmonious work environment." },
-        { img: blog1, icon: p8, text: "Entrepreneurial Mindset: Instilling a spirit of innovation, resilience, and adaptability to inspire entrepreneurial thinking and drive success in today's dynamic business landscape." },
+        { color: '#FFCDD2', icon: p1, text: "Communication Skills: Enhancing verbal and written communication skills for effective workplace interactions." },
+        { color: '#E1BEE7', icon: p2, text: "Critical Thinking: Developing analytical and problem-solving skills to tackle complex challenges." },
+        { color: '#C5CAE9', icon: p3, text: "Teamwork and Collaboration: Fostering collaboration and teamwork abilities to achieve common goals." },
+        { color: '#BBDEFB', icon: p4, text: "Leadership and Management: Cultivating leadership qualities and management capabilities for career advancement." },
+        { color: '#B2DFDB', icon: p5, text: "Technical Skills: Providing training in industry-specific technical skills and tools relevant to various sectors." },
+        { color: '#C8E6C9', icon: p6, text: "Problem Solving: Equipping individuals with critical thinking and analytical skills to tackle challenges with confidence and creativity." },
+        { color: '#DCEDC8', icon: p7, text: "Emotional Intelligence: Cultivating self-awareness and empathy to navigate interpersonal relationships and foster a harmonious work environment." },
+        { color: '#FFF9C4', icon: p8, text: "Entrepreneurial Mindset: Instilling a spirit of innovation, resilience, and adaptability to inspire entrepreneurial thinking and drive success in today's dynamic business landscape." },
     ];
 
     const spiritualPoints = [
-        { img: blog2, icon: d1, text: "Mantra Meditation: Teaching Mantra meditation techniques and the foundational principles of Bhagavad Gita practices to cultivate mental clarity and emotional balance among youth." },
-        { img: team, icon: d2, text: "Self-Discovery and Reflection: Guiding participants on a journey of self-discovery and reflection to uncover their passions, values, and life purpose." },
-        { img: team1, icon: d3, text: "Wellness and Well-being: Providing resources and tools for maintaining physical, mental, and emotional wellness." },
-        { img: success1, icon: d4, text: "Values and Ethics: Exploring ethical principles and values-based decision-making to navigate life's challenges with integrity and purpose." },
-        { img: event1, icon: d5, text: "Community Service and Engagement: Encouraging participants to engage in service-oriented activities and contribute positively to their communities." },
+        { color: '#FFECB3', icon: d1, text: "Mantra Meditation: Teaching Mantra meditation techniques and the foundational principles of Bhagavad Gita practices to cultivate mental clarity and emotional balance among youth." },
+        { color: '#FFE0B2', icon: d2, text: "Self-Discovery and Reflection: Guiding participants on a journey of self-discovery and reflection to uncover their passions, values, and life purpose." },
+        { color: '#FFCCBC', icon: d3, text: "Wellness and Well-being: Providing resources and tools for maintaining physical, mental, and emotional wellness." },
+        { color: '#D7CCC8', icon: d4, text: "Values and Ethics: Exploring ethical principles and values-based decision-making to navigate life's challenges with integrity and purpose." },
+        { color: '#CFD8DC', icon: d5, text: "Community Service and Engagement: Encouraging participants to engage in service-oriented activities and contribute positively to their communities." },
     ];
 
     const workshopPoints = [
-        { img: success2, icon: e1, text: "Industry Insights: Inviting industry experts and thought leaders to share insights and trends in various sectors." },
-        { img: success3, icon: e2, text: "Professional Development: Offering workshops on resume writing, interview skills, networking, and career planning." },
-        { img: blog, icon: e3, text: "Personal Growth: Hosting seminars on personal development, goal setting, time management, and stress management." },
-        { img: blog1, icon: e4, text: "Spiritual Retreats: Organizing spiritual retreats and retreats to provide participants with opportunities for reflection, rejuvenation, and spiritual growth." },
+        { color: '#B3E5FC', icon: e1, text: "Industry Insights: Inviting industry experts and thought leaders to share insights and trends in various sectors." },
+        { color: '#B2EBF2', icon: e2, text: "Professional Development: Offering workshops on resume writing, interview skills, networking, and career planning." },
+        { color: '#B2DFDB', icon: e3, text: "Personal Growth: Hosting seminars on personal development, goal setting, time management, and stress management." },
+        { color: '#C8E6C9', icon: e4, text: "Spiritual Retreats: Organizing spiritual retreats and retreats to provide participants with opportunities for reflection, rejuvenation, and spiritual growth." },
     ];
 
     return (
         <div className={classes.ourprogram}>
             <div className={classes.header}>
-                <img src={banner} alt="Banner" className={classes.banner} />
                 <div className={classes.headerContent}>
                     <h1>Our Programs</h1>
                     <p>Building Careers and Characters Together</p>
@@ -77,14 +74,13 @@ const OurProgram = () => {
                 <div className={classes.pointsGrid}>
                     {employabilityPoints.map((point, index) => (
                         <div key={index} className={classes.pointCard}>
-                            <div className={classes.pointContent}>
-                                <img src={point.img} alt={`Point ${index + 1}`} className={classes.pointImage} />
-                                <div className={classes.iconAndText}>
-                                    <img src={point.icon} alt={`Icon ${index + 1}`} className={classes.pointIcon} />
-                                    <div className={classes.pointText}>
-                                        <h3>{point.text.split(':')[0]}</h3>
-                                        <p>{point.text.split(':')[1]}</p>
-                                    </div>
+                            <div className={classes.colorBlock} style={{ backgroundColor: point.color }}>
+                                <img src={point.icon} alt={`Icon ${index + 1}`} className={classes.pointIcon} />
+                            </div>
+                            <div className={classes.iconAndText}>
+                                <div className={classes.pointText}>
+                                    <h3>{point.text.split(':')[0]}</h3>
+                                    <p>{point.text.split(':')[1]}</p>
                                 </div>
                             </div>
                         </div>
@@ -96,15 +92,14 @@ const OurProgram = () => {
                 <div className={classes.pointsGrid}>
                     {spiritualPoints.map((point, index) => (
                         <div key={index} className={classes.pointCard}>
-                            <div className={classes.pointContent}>
-                                <img src={point.img} alt={`Point ${index + 1}`} className={classes.pointImage} />
-                                <div className={classes.iconAndText}>
-                                    <img src={point.icon} alt={`Icon ${index + 1}`} className={classes.pointIcon} />
-                                    <div className={classes.pointText}>
-                                        <h3>{point.text.split(':')[0]}</h3>
-                                        <p>{point.text.split(':')[1]}</p>
-                                    </div>
-                               </div>
+                            <div className={classes.colorBlock} style={{ backgroundColor: point.color }}>
+                                <img src={point.icon} alt={`Icon ${index + 1}`} className={classes.pointIcon} />
+                            </div>
+                            <div className={classes.iconAndText}>
+                                <div className={classes.pointText}>
+                                    <h3>{point.text.split(':')[0]}</h3>
+                                    <p>{point.text.split(':')[1]}</p>
+                                </div>
                             </div>
                         </div>
                     ))}
@@ -115,14 +110,13 @@ const OurProgram = () => {
                 <div className={classes.pointsGrid}>
                     {workshopPoints.map((point, index) => (
                         <div key={index} className={classes.pointCard}>
-                            <div className={classes.pointContent}>
-                                <img src={point.img} alt={`Point ${index + 1}`} className={classes.pointImage} />
-                                <div className={classes.iconAndText}>
-                                    <img src={point.icon} alt={`Icon ${index + 1}`} className={classes.pointIcon} />
-                                    <div className={classes.pointText}>
-                                        <h3>{point.text.split(':')[0]}</h3>
-                                        <p>{point.text.split(':')[1]}</p>
-                                    </div>
+                            <div className={classes.colorBlock} style={{ backgroundColor: point.color }}>
+                                <img src={point.icon} alt={`Icon ${index + 1}`} className={classes.pointIcon} />
+                            </div>
+                            <div className={classes.iconAndText}>
+                                <div className={classes.pointText}>
+                                    <h3>{point.text.split(':')[0]}</h3>
+                                    <p>{point.text.split(':')[1]}</p>
                                 </div>
                             </div>
                         </div>
@@ -132,7 +126,7 @@ const OurProgram = () => {
 
             <div className={classes.bottomCardsContainer}>
                 <div className={classes.bottomCard}>
-                    <img src={event1} alt="Image 1" className={classes.bottomCardImage} />
+                    <img src={team} alt="Yuva Udyami Chetana Kendra" style={{ width: '100%', height: 'auto', borderRadius: '10px 10px 0 0' }} />
                     <div className={classes.bottomCardContent}>
                         <h2>Welcome to Bhaktivedanta Yuva Udyami Chetana Kendra</h2>
                         <p>Fueling Futures: Empowering Youth with Entrepreneurship and Employability</p>
@@ -140,16 +134,22 @@ const OurProgram = () => {
                     </div>
                 </div>
                 <div className={classes.bottomCard}>
-                    <img src={event1} alt="Image 2" className={classes.bottomCardImage} />
+                    <img src={team} alt="Adhyatmic Jagruti Kendra" style={{ width: '100%', height: 'auto', borderRadius: '10px 10px 0 0' }} />
                     <div className={classes.bottomCardContent}>
-                        <h2>Welcome to Bhaktivedanta Adhyatmik Jagruti Kendra</h2>
+                    <h2>Welcome to Bhaktivedanta Adhyatmik Jagruti Kendra</h2>
                         <p>Awakening Spirits, Shaping Futures, Enlightening Souls</p>
                         <Link to="/ourprogram/adj" className={classes.learnMoreButton}>Learn More</Link>
                     </div>
                 </div>
             </div>
+            <div className={classes.ThrivingCommunity}>
+        <p>Become a Part of Our Thriving Community</p>
+        <button className={classes.KnowMoreButton}>JOIN NOW</button>
+      </div>
+        
         </div>
     );
 };
 
 export default OurProgram;
+

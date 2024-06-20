@@ -3,7 +3,7 @@ import classes from './success.module.css';
 import designWithinReach from './event1.png';
 import jenisIceCream from './event1.png';
 import whirlpool from './event1.png';
-import banner from './success stories (2).jpg';
+import banner from './success stories.jpg';
 
 const SuccessStories = () => {
   return (
@@ -41,9 +41,13 @@ const SuccessStories = () => {
         </div>
       </div>
       <footer className={classes.footer}>
-        <p>Try G Suite for free.</p>
-        <button className={classes.ctaButton}>GET STARTED</button>
+        
+        <button className={classes.ctaButton}>COMING SOON...</button>
       </footer>
+      <div className={classes.ThrivingCommunity}>
+        <p>Become a Part of Our Thriving Community</p>
+        <button className={classes.KnowMoreButton}>JOIN NOW</button>
+      </div>
     </div>
   );
 };

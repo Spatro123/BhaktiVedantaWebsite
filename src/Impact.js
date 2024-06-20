@@ -33,7 +33,7 @@ function OurImpact() {
           <p>Over 500 young individuals have participated in our programs, gaining crucial employability and life skills.</p>
         </div>
         <div className={classes.block}>
-          <img src={impact2} alt="200+ Workshops Conducted" className={classes.eventImage} />
+          <img src={impact1} alt="200+ Workshops Conducted" className={classes.eventImage} />
           <img src={l2} alt="Icon 2" className={classes.icon} />
           <h3>200+ Workshops Conducted</h3>
           <p>We have organized over 200 workshops focusing on various aspects of personal and professional development.</p>
@@ -45,7 +45,7 @@ function OurImpact() {
           <p>Through our outreach and community programs, we have positively impacted the lives of over 200 community members.</p>
         </div>
         <div className={`${classes.block} ${classes.fullWidthBlock}`}>
-          <img src={impact4} alt="Empowering Youth and Women" className={classes.icon} />
+          <img src={l1} alt="Empowering Youth and Women" className={classes.icon} />
           <h3>Empowering Youth and Women</h3>
           <p>Through our programs and initiatives, we have empowered over 500 youth and women to unlock their potential and pursue their dreams. From entrepreneurship education to employability skill development, we provide the resources and support needed to foster economic independence and self-reliance.</p>
         </div>
@@ -72,9 +72,13 @@ function OurImpact() {
       </section>
       <footer>
         <img src={l5} alt="Join Us" className={classes.icon} />
-        <h3>Join Us in Making a Difference</h3>
+        <h3>Join Us</h3>
         <p>Join us in our mission to transform lives, inspire change, and create a brighter future for generations to come. Together, we can make a meaningful impact and leave a lasting legacy of hope, compassion, and empowerment. Let's work together to build a world where every individual has the opportunity to thrive and succeed.</p>
       </footer>
+      <div className={classes.ThrivingCommunity}>
+        <p>Become a Part of Our Thriving Community</p>
+        <button className={classes.KnowMoreButton}>JOIN NOW</button>
+      </div>
     </div>
   );
 }

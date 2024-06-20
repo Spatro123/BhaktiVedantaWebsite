@@ -52,6 +52,10 @@ function OurPartners() {
         </div>
       </section>
       <div className={classes.stripe}></div>
+      <div className={classes.ThrivingCommunity}>
+        <p>Become a Part of Our Thriving Community</p>
+        <button className={classes.KnowMoreButton}>JOIN NOW</button>
+      </div>
     </div>
   );
 }
