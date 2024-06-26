@@ -28,14 +28,20 @@ const Header = () => {
   const closeDropdowns = () => {
     setIsProgramsOpen(false);
     setIsResourcesOpen(false);
+    setIsMobileNavOpen(false);
   };
 
   return (
     <header className={classes.Header}>
-      <div className={classes.LogoContainer}>
-        <img src={logo} alt="Logo" className={classes.Logo} />
-      </div>
-      <nav className={`${classes.NavContainer} ${isMobileNavOpen ? classes.MobileNav : ''}`}>
+      <div className={classes.TopContainer}>
+        <div className={classes.LogoContainer}>
+          <img src={logo} alt="Logo" className={classes.Logo} />
+        </div>
+        <button className={classes.MobileNavToggle} onClick={toggleMobileNav}>
+          ☰
+        </button>
+     
+      <nav className={`${classes.NavContainer} ${isMobileNavOpen ? classes.MobileNavOpen : ''}`}>
         <NavLink to="/" className={({ isActive }) => isActive ? `${classes.HeaderItem} ${classes.Active}` : classes.HeaderItem} onClick={closeDropdowns}>Home</NavLink>
         <NavLink to="/about" className={({ isActive }) => isActive ? `${classes.HeaderItem} ${classes.Active}` : classes.HeaderItem} onClick={closeDropdowns}>About Us</NavLink>
         <div className={classes.DropdownContainer}>
@@ -66,10 +72,11 @@ const Header = () => {
         </div>
         <NavLink to="/contact" className={({ isActive }) => isActive ? `${classes.HeaderItem} ${classes.Active}` : classes.HeaderItem} onClick={closeDropdowns}>Contact</NavLink>
       </nav>
-      <button className={classes.SignUpButton}>
+      {/* <button className={classes.SignUpButton}>
         <span className={classes.LoginText}>Login / Sign Up</span>
         <img src={login} alt="Login" className={classes.LoginIcon} />
-      </button>
+      </button> */}
+      </div>
     </header>
   );
 };
