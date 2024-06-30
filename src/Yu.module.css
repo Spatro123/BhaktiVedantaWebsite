@@ -10,7 +10,9 @@ header h1 {
   text-align: center;
   animation: fadeIn 2s ease-in-out;
 }
-
+p {
+  margin-bottom: 20px;
+}
 header h2 {
   font-size: 24px;
   color: grey;
@@ -53,7 +55,7 @@ header h2 {
 }
 
 .introText {
-  font-size: 25px;
+  font-size: 1.3rem;
   color: black;
   margin: 20px 0;
   animation: fadeIn 3s ease-in-out;
@@ -95,7 +97,7 @@ header h2 {
 }
 
 .block p {
-  font-size: 16px;
+  font-size: 1.3rem;
   color: #666;
   text-align: left;
 }
@@ -115,7 +117,7 @@ footer h3 {
 }
 
 footer p {
-  font-size: 16px;
+  font-size: 1.3rem;
   color: #666;
 }
 

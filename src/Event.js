@@ -1,7 +1,7 @@
 import React from 'react';
 import classes from './Event.module.css';
 import eventImage from './event1.png';
-import banner from './events (2).jpg';
+import banner from './header banner.jpg';
 
 const EventLandingPage = () => {
   return (

@@ -6,7 +6,7 @@
 .banner {
   position: relative;
     text-align: left;
-    background-image: url('Aboutus.jpg');
+    background-image: url('header\ banner.jpg');
     background-size: contain; 
     background-position: center;
     background-repeat: no-repeat;
@@ -85,7 +85,7 @@
 }
 
 .sectionContent1 p {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 .squareBox {
@@ -148,14 +148,14 @@
 
 .quote {
   position: absolute;
-  bottom: 20px;
-  left: 20px;
+  
+  margin-top: 100px;
   background-color: rgba(221, 213, 213, 0.8);
   color: rgb(0, 0, 0);
   padding: 10px;
   border-radius: 8px;
   font-size: 20px;
-  width: 80%;
+  width: 100%;
 }
 
 .textContainer {
@@ -181,7 +181,7 @@
 
 .para p {
   color: #000000;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
 }
 
 h1,
@@ -223,42 +223,44 @@ p {
 }
 
 .teamSection {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
+  display: grid;
   align-items: center;
   margin-bottom: 20px;
 }
 
 .team {
   display: flex;
-  flex-wrap: wrap;
+  
   gap: 20px;
   justify-content: center; 
 }
 
 .teamBox {
   display: flex;
-  justify-content: center;
-  width: calc(100% - 40px);
-  max-width: 400px;
-  gap: 20px;
-  background-image: linear-gradient(to top, rgba(123, 30, 20, 0.2), rgba(184, 66, 52, 0));
+  justify-content: space-between;
+  
+  gap: 50px;
   border-radius: 5px;
 }
 
 .teamMember {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+   justify-content: center;
   align-items: center;
   padding: 20px;
-  height: fit-content;
-  width: 100%;
+ 
   border-radius: 8px;
   background: transparent;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border: 2px solid lightgray;
   transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+}
+
+.teamMember h3{
+  text-align: center;
+}
+.teamMember p{
+  text-align: center;
 }
 
 .teamMember:hover {

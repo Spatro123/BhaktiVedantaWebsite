@@ -2,36 +2,36 @@
 .Header {
   display: flex;
   align-items: center;
-  justify-content: space-between; 
+  justify-content: space-between;
   padding: 10px 20px;
   border: 1px solid lightgray;
   color: #FFFFFF;
-  flex-wrap: wrap; 
-  
+  flex-wrap: wrap;
+  padding: 0 20px; 
 }
-
 
 .TopContainer {
   display: flex;
   align-items: center;
-  justify-content: space-between; 
+  justify-content: center;
   width: 100%;
+  padding: 20px;
 }
-
 
 .LogoContainer {
   display: flex;
   align-items: center;
-  justify-content: center; 
+  justify-content: center;
   background: transparent;
+  margin-right: 40px;
 }
 
 .Logo {
-  height: 60px; 
+  height: 60px;
 }
 
 .MobileNavToggle {
-  display: none; 
+  display: none;
   font-size: 1.5rem;
   background: none;
   border: none;
@@ -42,9 +42,7 @@
 .NavContainer {
   display: flex;
   align-items: center;
-  
 }
-
 
 .MobileNavOpen {
   display: flex;
@@ -52,10 +50,11 @@
   align-items: center;
   width: 100%;
 }
-.MobileNavToggle{
 
+.MobileNavToggle {
   color: #000000;
 }
+
 .DropdownContainer {
   position: relative;
 }
@@ -67,11 +66,10 @@
   cursor: pointer;
   font-size: 1rem;
   min-width: 110px;
-  text-align: center; 
+  text-align: center;
   border-radius: 5px;
-  padding: 10px; 
-  margin: 0 5px; 
-  
+  padding: 10px;
+  margin: 0 5px;
 }
 
 .DropdownContent {
@@ -83,7 +81,6 @@
   padding: 10px 15px;
   border-radius: 5px;
   background: none;
-  
 }
 
 .DropdownItem {
@@ -94,13 +91,11 @@
   border: 1px solid #ccc;
   margin-bottom: 5px;
   border-radius: 5px;
-  
 }
 
 .DropdownItem:hover {
   background-color: #ddd;
 }
-
 
 .SignUpButton {
   display: flex;
@@ -109,11 +104,11 @@
   background-color: transparent;
   border: 1px solid #FFFFFF;
   cursor: pointer;
-  min-width: 120px; 
+  min-width: 120px;
   border-radius: 5px;
   gap: 5px;
   font-size: 1rem;
-  padding: 10px 15px; 
+  padding: 10px 15px;
   margin-bottom: 10px;
   transition: background-color 0.3s;
 }
@@ -124,7 +119,7 @@
 }
 
 .LoginIcon {
-  width: 20px; 
+  width: 20px;
 }
 
 .LoginText {
@@ -137,12 +132,12 @@
   border: 1px solid lightgray;
 }
 
-
 @media (max-width: 1024px) {
   .TopContainer {
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+    padding: 0 20px; 
   }
 
   .MobileNavToggle {
@@ -150,7 +145,7 @@
   }
 
   .NavContainer {
-    display: none; 
+    display: none;
   }
 
   .MobileNavOpen {
@@ -183,10 +178,11 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
+    padding: 0 10px; 
   }
 
   .NavContainer {
-    display: none; 
+    display: none;
   }
 
   .MobileNavOpen {
@@ -195,10 +191,9 @@
     align-items: center;
     width: 100%;
     padding: 10px;
-    
   }
-  .NavContainer{
-   
+
+  .NavContainer {
     padding: 10px;
   }
 
@@ -215,12 +210,12 @@
   }
 
   .SignUpButton {
-    display: flex; 
+    display: flex;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
     width: 100%;
     min-width: auto;
-    padding: 15px 0; 
+    padding: 15px 0;
     margin-top: 10px;
   }
 

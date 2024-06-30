@@ -1,6 +1,6 @@
 import React from 'react';
 import classes from './Yu.module.css';
-import banner from './yuva udyami chetana kendra (2).jpg';
+import banner from './header banner.jpg';
 import event1 from './event1.png';
 import event2 from './event2.jpg';
 import event3 from './event3.png';

@@ -9,17 +9,17 @@ import p1 from './1.jpeg';
 import icon1 from './icon1.png';
 import icon2 from './icon2.png';
 import icon3 from './icon3.png';
-import p2 from './2a.jpg';
-import p3 from './2a.jpg';
-import event1 from './event1.png';
-import event2 from './event2.jpg';
-import event3 from './event3.png';
+import p2 from './Program Yuva Udyami Chetana Kendra.jpg';
+import p3 from './Program Adhyatmic Jagruti Kendra.jpg';
+import event1 from './Events-Skill Up Employability Enhancement Program.jpg';
+import event2 from './Events-Entrepreneurial Mindset From Ideas to Impact.jpg';
+import event3 from './Events-The Journey Towards Self-Discovery.jpg';
 import success1 from './3.jpg';
 import success2 from './3a.jpg';
 import success3 from './3b.png';
-import blog from "./blog1.png";
-import blog1 from './blog2.png';
-import blog2 from './blog 3.jpg';
+import blog from "./Blog-Emplyability and spirituality growth.jpg";
+import blog1 from './Blog-Entrepreneurship purpose.jpg';
+import blog2 from './Blog-Mantra meditation.jpg';
 
 function App() {
   return (
@@ -144,7 +144,7 @@ function App() {
         </div>
         <div className={classes.successcards}>
           <div className={classes.SuccessCard}>
-            <img src={success2} className={classes.SuccessImage} alt="Success 1" />
+            <img src={success3} className={classes.SuccessImage} alt="Success 1" />
             <div className={classes.SuccessText}>
               <b>Gitika, Khurda</b>
               <p>A Triumph Of Resilience Against All Odds</p>
@@ -158,7 +158,7 @@ function App() {
             </div>
           </div>
           <div className={classes.SuccessCard}>
-            <img src={success3} className={classes.SuccessImage} alt="Success 3" />
+            <img src={success2} className={classes.SuccessImage} alt="Success 3" />
             <div className={classes.SuccessText}>
               <b>Deepak, Delhi</b>
               <p>Perseverance and Progress: An Entrepreneurial Journey</p>
@@ -179,19 +179,22 @@ function App() {
           <div className={classes.SuccessCard}>
             <img src={blog} className={classes.SuccessImage} alt="Blog 1" />
             <div className={classes.SuccessText}>
-              <p>7 Tips for Better Resume</p>
+              <p>Bridging Employability Skills and Spiritual Growth: A Holistic Approach</p>
+              <button>Read More</button>
             </div>
           </div>
           <div className={classes.SuccessCard}>
             <img src={blog1} className={classes.SuccessImage} alt="Blog 2" />
             <div className={classes.SuccessText}>
-              <p>Effective Networking Strategies</p>
+              <p>Entrepreneurship with a Purpose: Lessons from the Bhagavad Gita</p>
+              <button>Read More</button>
             </div>
           </div>
           <div className={classes.SuccessCard}>
             <img src={blog2} className={classes.SuccessImage} alt="Blog 3" />
             <div className={classes.SuccessText}>
-              <p>Leveraging Social Media for Career Growth</p>
+              <p>The Power of Mantra Meditation in Modern Life for Students</p>
+              <button>Read More</button>
             </div>
           </div>
         </div>

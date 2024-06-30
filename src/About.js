@@ -6,7 +6,7 @@ import about from "./ic.png";
 import vision from "./icon1.png";
 import mission from "./mission (1).png";
 import leadership from "./ic1.png";
-import approachImage from "./blog1.png";
+import approachImage from "./about us-Our approach.jpg";
 import h1 from "./integrity.png";
 import h2 from "./compassion (1).png";
 import h3 from "./excellence.png";
@@ -137,14 +137,13 @@ const About = () => {
               <h3>Debansh Das Sharma</h3>
               <p>CEO</p>
             </div>
-            </div>
-            <div className={classes.teamBox}>
- 
+            
             <div className={classes.teamMember}>
               <img src={chairmanImage} alt="Tukaram Das - Chairman" className={classes.teamImage} />
               <h3>Tukaram Das</h3>
               <p>Chairman</p>
-            </div>
+              </div>
+           
             </div>
             </div>
         </section>

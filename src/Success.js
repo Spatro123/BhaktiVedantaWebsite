@@ -3,7 +3,7 @@ import classes from './success.module.css';
 import designWithinReach from './event1.png';
 import jenisIceCream from './event1.png';
 import whirlpool from './event1.png';
-import banner from './success stories.jpg';
+import banner from './header banner.jpg';
 
 const SuccessStories = () => {
   return (

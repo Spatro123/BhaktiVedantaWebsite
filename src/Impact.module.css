@@ -12,12 +12,13 @@ header h1 {
 }
 
 header h2 {
-  font-size: 24px;
+  font-size: 1.3rem;
   color: black;
   margin-bottom: 20px;
   text-align: left;
   animation: fadeIn 3s ease-in-out;
 }
+
 
 .banner {
   position: relative;

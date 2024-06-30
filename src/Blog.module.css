@@ -117,6 +117,7 @@ body {
 .post h2 {
   font-size: 1.5rem;
   margin: 10px 0;
+  text-align: left;
 }
 
 .post p {

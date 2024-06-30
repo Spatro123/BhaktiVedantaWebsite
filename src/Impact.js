@@ -1,10 +1,10 @@
 import React from 'react';
 import classes from './Impact.module.css';
-import banner from './our impact.jpg';
+import banner from './header banner.jpg';
 
-import impact1 from './event1.png';
-import impact2 from './event2.jpg';
-import impact3 from './event3.png';
+import impact1 from './Our impact-500+ Youth Empowered.jpg';
+import impact2 from './Our impact-200+ Workshops Conducted.jpg';
+import impact3 from './Our impact- 200+ Community Members Engaged.jpg';
 import impact4 from './event1.png';
 import l1 from './l1.png';
 import l2 from './l2.png';
@@ -23,7 +23,7 @@ function OurImpact() {
             <p>Transforming Lives, Inspiring Change</p>
           </div>
         </div>
-        <h2>At Bhaktivedanta International Academy for Applied Spiritual Technology, our impact extends far beyond the walls of our institution. We are proud to be catalysts for positive change, empowering individuals and communities to thrive and flourish.</h2>
+        <p>At Bhaktivedanta International Academy for Applied Spiritual Technology, our impact extends far beyond the walls of our institution. We are proud to be catalysts for positive change, empowering individuals and communities to thrive and flourish.</p>
       </header>
       <section className={classes.content}>
         <div className={classes.block}>
@@ -33,7 +33,7 @@ function OurImpact() {
           <p>Over 500 young individuals have participated in our programs, gaining crucial employability and life skills.</p>
         </div>
         <div className={classes.block}>
-          <img src={impact1} alt="200+ Workshops Conducted" className={classes.eventImage} />
+          <img src={impact2} alt="200+ Workshops Conducted" className={classes.eventImage} />
           <img src={l2} alt="Icon 2" className={classes.icon} />
           <h3>200+ Workshops Conducted</h3>
           <p>We have organized over 200 workshops focusing on various aspects of personal and professional development.</p>

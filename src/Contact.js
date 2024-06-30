@@ -1,6 +1,6 @@
 import React from 'react';
 import classes from './contact.module.css';
-import banner from './contact us.jpg';
+import banner from './header banner.jpg';
 import t1 from "./twitter (1).png";
 import t3 from "./youtube (3).png";
 import t4 from "./instagram (1).png";
@@ -24,6 +24,11 @@ const ContactUs = () => {
           <label htmlFor="name">Name:</label>
           <input type="text" id="name" name="name" required />
         </div>
+        <div className={classes.formGroup}>
+          <label htmlFor="phone">Phone No. :</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
         <div className={classes.formGroup}>
           <label htmlFor="email">Email:</label>
           <input type="email" id="email" name="email" required />

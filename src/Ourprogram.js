@@ -27,8 +27,8 @@ import success3 from './3b.png';
 import blog from "./blog1.png";
 import blog1 from './blog2.png';
 import blog2 from './blog 3.jpg';
-import team from './team.jpg';
-import team1 from './team1.jpg';
+import team from './Program Yuva Udyami Chetana Kendra.jpg'
+import team1 from './Program Adhyatmic Jagruti Kendra.jpg';
 
 const OurProgram = () => {
     const employabilityPoints = [
@@ -134,7 +134,7 @@ const OurProgram = () => {
                     </div>
                 </div>
                 <div className={classes.bottomCard}>
-                    <img src={team} alt="Adhyatmic Jagruti Kendra" style={{ width: '100%', height: 'auto', borderRadius: '10px 10px 0 0' }} />
+                    <img src={team1} alt="Adhyatmic Jagruti Kendra" style={{ width: '100%', height: 'auto', borderRadius: '10px 10px 0 0' }} />
                     <div className={classes.bottomCardContent}>
                     <h2>Welcome to Bhaktivedanta Adhyatmik Jagruti Kendra</h2>
                         <p>Awakening Spirits, Shaping Futures, Enlightening Souls</p>

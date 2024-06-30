@@ -1,6 +1,6 @@
 import React from 'react';
 import classes from './Yu.module.css';
-import banner from './adhyatmic jagruti kendra (2).jpg';
+import banner from './header banner.jpg';
 
 import event1 from './event1.png';
 import event2 from './event2.jpg';
@@ -24,6 +24,9 @@ function App() {
           </div>
         </div>
       </header>
+
+      <p>At Bhaktivedanta Adhyatmik Jagruti Kendra, we are committed to awakening the spiritual consciousness, shaping futures, and enlightening souls. Our programs are designed to guide individuals on a transformative journey of self-discovery, inner growth, and spiritual enlightenment.</p>
+
       <section className={classes.content}>
         <div className={classes.block}>
           <img src={l1} alt="Icon 1" className={classes.icon} />
@@ -41,8 +44,7 @@ function App() {
           <p>At Bhaktivedanta Adhyatmik Jagruti Kendra, we are dedicated to enlightening souls and illuminating the path to self-realization. Through the study of ancient wisdom, sacred texts, and spiritual teachings, we provide participants with the knowledge and tools they need to embark on a journey of self-discovery and inner transformation.</p>
         </div>
         <div className={`${classes.block} ${classes.fullWidthBlock}`}>
-          <img src={l4} alt="Icon 4" className={classes.icon} />
-          <h3>Join Us</h3>
+         
           <p>Join us at Bhaktivedanta Adhyatmik Jagruti Kendra and embark on a profound journey of spiritual awakening, personal growth, and enlightenment. Together, let's awaken spirits, shape futures, and enlighten souls, as we strive to create a world filled with peace, harmony, and spiritual wisdom.</p>
         </div>
       </section>

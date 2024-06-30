@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import classes from './Blog.module.css';
-import blog from './spiritual.jpg';
-import blog1 from './meditation.jpg';
-import blog2 from './pract.jpg';
+import blog from "./Blog-Emplyability and spirituality growth.jpg";
+import blog1 from './Blog-Entrepreneurship purpose.jpg';
+import blog2 from './Blog-Mantra meditation.jpg';
 import banner from './blog (2).jpg';
 
 const Blog = () => {
@@ -19,9 +19,9 @@ const Blog = () => {
         </div>
         <div className={classes.categories}>
           <button className={`${classes.category} ${classes.categoryActive}`}>All</button>
-          <button className={classes.category}>Newsletter</button>
-          <button className={classes.category}>Tips</button>
-          <button className={classes.category}>Insight</button>
+          <button className={classes.category}>Start-Ups</button>
+          <button className={classes.category}>CareerTips</button>
+          <button className={classes.category}>Spirituality</button>
           <button className={classes.category}>Success Stories</button>
         </div>
       </header>
@@ -30,8 +30,8 @@ const Blog = () => {
           <img src={blog} alt="Post 1" className={classes.postImage} />
           <div className={classes.postContent}>
             <span className={classes.postDate}>October 18, 2023 - 7 min read</span>
-            <h2>The Future of EHS: Emerging Trends to Watch</h2>
-            <p>Technological advancements, data analytics, and industry disruptions. Navigating the evolving landscape...</p>
+            <h2>Bridging Employability Skills and Spiritual Growth: A Holistic Approach
+            </h2>
             <Link to="/blog1" className={classes.readMore}>Read More</Link>
           </div>
         </div>
@@ -39,8 +39,7 @@ const Blog = () => {
           <img src={blog1} alt="Post 2" className={classes.postImage} />
           <div className={classes.postContent}>
             <span className={classes.postDate}>October 18, 2023 - 7 min read</span>
-            <h2>Mental Health Matters: EHS Strategies for Employee Well-Being</h2>
-            <p>Addressing stress, burnout, and mental health in the workplace. A holistic approach to support employee...</p>
+            <h2>Entrepreneurship with a Purpose: Lessons from the Bhagavad Gita</h2>
             <Link to="/blog2" className={classes.readMore}>Read More</Link>
           </div>
         </div>
@@ -48,8 +47,7 @@ const Blog = () => {
           <img src={blog2} alt="Post 3" className={classes.postImage} />
           <div className={classes.postContent}>
             <span className={classes.postDate}>October 18, 2023 - 7 min read</span>
-            <h2>Creating a Safety Culture: EHS Leadership Insights</h2>
-            <p>Empowering your team to prioritize safety every day, leadership strategies, training, and cultivating...</p>
+            <h2>The Power of Mantra Meditation in Modern Life for Students</h2>
             <Link to="/blog3" className={classes.readMore}>Read More</Link>
           </div>
         </div>
