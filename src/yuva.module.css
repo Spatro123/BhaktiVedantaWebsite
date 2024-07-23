@@ -1,0 +1,224 @@
+
+.bannerContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.banner {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+}
+
+.bannerText {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 90%; 
+}
+
+.bannerText h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.bannerText p {
+  font-size: 1.2rem;
+}
+
+@media (min-width: 768px) {
+  .holisticsuccesspathway {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .sideImage {
+    width: 40%;
+    margin-right: 20px;
+  }
+
+  .holisticContent {
+    margin-top: 0;
+    flex: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .bannerText h1 {
+    font-size: 2rem;
+  }
+
+  .bannerText p {
+    font-size: 1rem;
+  }
+}
+
+  .sideImage {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .App {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  
+   
+  }
+  
+  .header, .programoverview, .holisticsuccesspathway, .comprehensivecurriculum, .benefits, .newSection {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+  }
+  
+  .header h1, .programoverview h2, .holisticsuccesspathway h2, .comprehensivecurriculum h2, .benefits h2, .newSection h2 {
+   
+    margin-bottom: 10px;
+    background-color: #B84234;
+  color: white;
+  text-align: left;
+  padding: 20px;
+  border-radius: 5px;
+  }
+  
+  .holisticsuccesspathway {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .holisticContent {
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+  @media (min-width: 768px) {
+    .holisticsuccesspathway {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+    .bannerText{
+      top: 50%;
+      left: 30%;
+      text-align: left;
+    }
+  
+    .sideImage {
+      width: 40%;
+      margin-right: 20px;
+    }
+  
+    .holisticContent {
+      margin-top: 0;
+      flex: 1;
+    }
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  ul li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+  }
+  
+  .newSection {
+    text-align: center;
+  }
+  
+  .newSection h2{
+  background-color: #B84234;
+  color: white;
+  text-align: left;
+  padding: 20px;
+  border-radius: 5px;
+  }
+  .newSection ul {
+    text-align: left;
+    margin: 20px 0;
+  }
+  
+  .callToAction {
+    background-color:#B84234;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+  .callToAction p{
+    color: white;
+  }
+  .enrollButton {
+    background-color: #fff;
+    color: #B84234;
+    border: 1px solid #B84234;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .enrollButton:hover {
+    background-color: #cc0000;
+    color: #fff;
+  }
+  
+@media (max-width: 480px) {
+  .bannerText {
+    top: 30%;
+    left: 35%;
+    transform: translate(-50%, -30%);
+    padding: 10px;
+    text-align: left;
+  }
+
+  .bannerText h1 {
+    font-size: 1rem;
+    text-align: left;
+  }
+  
+
+  .bannerText p {
+    font-size: 0.9rem;
+    text-align: left;
+  
+  }
+
+  .header h1, .programoverview h2, .holisticsuccesspathway h2, .comprehensivecurriculum h2, .benefits h2, .newSection h2 {
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+
+  .header, .programoverview, .holisticsuccesspathway, .comprehensivecurriculum, .benefits, .newSection {
+    padding: 10px;
+    margin: 5px auto;
+  }
+
+  .holisticsuccesspathway {
+    flex-direction: column;
+  }
+
+  .sideImage {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .holisticContent {
+    margin-top: 5px;
+  }
+}

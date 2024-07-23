@@ -1,10 +1,7 @@
-
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import classes from "./App.module.css";
-
-import logo from './logo1.svg'
+import logo from './logo1.svg';
 import p1 from './1.jpeg';
 import icon1 from './icon1.png';
 import icon2 from './icon2.png';
@@ -25,7 +22,7 @@ function App() {
   return (
     <div className={classes.App}>
       <div className={classes.block1}>
-      <div className={classes.profile}>
+        <div className={classes.profile}>
           <img src={p1} className={classes.Image} alt="Illustration" />
         </div>
         <div className={classes.TextContent}>
@@ -33,7 +30,6 @@ function App() {
           <h2>Holistic Employability Skill Development through Nurturing Potential, Inspiring Change</h2>
           <button>REGISTER NOW</button>
         </div>
-        
       </div>
 
       <div className={classes.block3}>
@@ -41,8 +37,7 @@ function App() {
           <h1>Empowering Generations Through Skills and Spirit</h1>
           <p>
             Welcome to Bhaktivedanta International Academy for Applied Spiritual Technology, where we believe in the power of holistic development to transform lives. Our mission is to empower youth by combining employability skill development with spiritual and mental growth.
-        
-            <a href="#">Know More About Us</a>
+            <Link to="/about">Know More About Us</Link>
           </p>
         </div>
 
@@ -203,15 +198,11 @@ function App() {
             <button className={classes.BlogButton}>VIEW ALL BLOGS</button>
           </Link>
         </div>
-      
-        </div>
+      </div>
       <div className={classes.ThrivingCommunity}>
         <p>Become a Part of Our Thriving Community</p>
         <button className={classes.KnowMoreButton}>JOIN NOW</button>
       </div>
-        
-       
-      
     </div>
   );
 }

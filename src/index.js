@@ -19,6 +19,9 @@ import Event from './Event';
 import Blog1 from './Blog1';
 import Blog2 from './Blog2';
 import Blog3 from './Blog3';
+import PrivacyPolicy from './Privacypolicy';
+import Faq from './Faq';
+import Terms from "./Terms";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -41,6 +44,9 @@ root.render(
         <Route path="/blog1" element={<Blog1 />} />
         <Route path="/blog2" element={<Blog2 />} />
         <Route path="/blog3" element={<Blog3 />} />
+        <Route path="/privacyPolicy" element={<PrivacyPolicy />} /> 
+        <Route path="/faq" element={<Faq />} /> 
+        <Route path="/terms" element={<Terms />} /> 
       </Routes>
       <Footer />
     </Router>

@@ -1,4 +1,3 @@
-
 *,
 *::before,
 *::after {
@@ -35,6 +34,7 @@ html, body {
   width: 150px;
 }
 
+
 .bannerSection {
   position: relative;
   text-align: center;
@@ -44,7 +44,7 @@ html, body {
 }
 
 .bannerText h2 {
-  font-size: 3rem;
+  font-size: 2.5rem; 
   margin: 0;
   padding: 0 15px;
 }
@@ -90,7 +90,7 @@ html, body {
 .benefit {
   text-align: center;
   margin: 20px;
-  flex: 1;
+  flex: 1 1 100%; 
   min-width: 200px;
 }
 
@@ -99,6 +99,7 @@ html, body {
   display: block;
   margin-bottom: 10px;
 }
+
 
 .partnershipdetails {
   padding: 40px 20px;
@@ -128,6 +129,7 @@ html, body {
   text-align: center;
 }
 
+
 .footer {
   text-align: center;
   padding: 40px;
@@ -144,31 +146,21 @@ html, body {
   text-align: center;
 }
 
+
 @media (max-width: 768px) {
-  .bannerText {
-    top: 50%; 
+  .bannerText h2 {
     font-size: 2rem;
-    padding: 0 10px;
   }
 
   .benefit {
-    flex-basis: 45%;
-  }
-
-  .bannerContainer {
-    text-align: center;
-  }
-
-  .overlayText {
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
+    flex-basis: 100%;
   }
 }
 
 @media (max-width: 480px) {
   .header {
     flex-direction: column;
+    text-align: left;
   }
 
   .benefits {
@@ -176,11 +168,14 @@ html, body {
     align-items: center;
   }
 
-  .bannerText {
-    top: 50%; 
+  .bannerText h2 {
     font-size: 1rem; 
-    padding: 0 10px;
-   
+    text-align: left;
+  }
+
+  .bannerText h3 {
+    font-size: .5rem; 
+    text-align: left;
   }
 
   .icon {

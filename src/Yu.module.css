@@ -1,217 +1,259 @@
 .container {
-  max-width: 1400px;
-  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  color: #333;
   padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  border: 1px solid #ddd;
 }
 
-header h1 {
-  font-size: 36px;
-  color: black;
-  text-align: center;
-  animation: fadeIn 2s ease-in-out;
-}
-p {
-  margin-bottom: 20px;
-}
-header h2 {
-  font-size: 24px;
-  color: grey;
-  margin-bottom: 20px;
-  text-align: center;
-  animation: fadeIn 3s ease-in-out;
-}
-
-.banner {
+.headingPosterContainer {
   position: relative;
   text-align: center;
-  color: white;
+  margin-bottom: 20px;
 }
 
-.bannerImage {
-  width: 100%;
+.headingPoster {
+  max-width: 100%;
   height: auto;
+  border-radius: 5px;
 }
 
-.bannerText {
+.overlayText {
   position: absolute;
-  top: 40%;
-  left: 35%;
-  transform: translate(-50%, -50%);
-  color: #B84234;
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-align: center;
-}
-
-.bannerText h1 {
-  text-align: left;
-  font-size: 2.5rem;
-  color: #B84234
-}
-
-.bannerText h2 {
-  text-align: left;
-  font-size: 1.5rem;
-}
-
-.introText {
-  font-size: 1.3rem;
-  color: black;
-  margin: 20px 0;
-  animation: fadeIn 3s ease-in-out;
+  top: 50%;
+  left: 10%; 
+  transform: translateY(-50%); 
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 10px;
-  text-align: left;
-}
-
-.content {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-}
-
-.block {
-  padding: 20px;
-  border: 1px solid #ccc;
   border-radius: 5px;
-  background-color: #f9f9f9;
-  transition: transform 0.3s ease;
-  box-sizing: border-box;
-  animation: fadeIn 1s ease-in-out;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+  text-align: left; /* Ensure text alignment is left */
 }
 
-.fullWidthBlock {
-  grid-column: span 3;
-}
-
-.block:hover {
-  transform: translateY(-10px);
-}
-
-.block h3 {
+.overlayText h3 {
+  margin: 0;
   font-size: 24px;
-  color: #B84234;
 }
 
-.block p {
-  font-size: 1.3rem;
-  color: #666;
+.overlayText h2 {
+  margin: 5px 0 0;
+  font-size: 18px;
+}
+
+.header {
   text-align: left;
-}
-
-footer {
-  margin-top: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-}
-
-footer h3 {
-  font-size: 24px;
-  color: #B84234;
-}
-
-footer p {
-  font-size: 1.3rem;
-  color: #666;
-}
-
-.icon {
-  margin-bottom: 10px;
-}
-
-.icon1 {
-  height: 40px;
-  width: 40px;
-}
-
-.eventImage {
-  width: 100%;
-  height: auto;
-  margin-bottom: 10px;
-}
-
-.ThrivingCommunity {
-  background-color: #B84234;
-  color: white;
+  background-color: #f5d5a2;
   padding: 20px;
-  text-align: center;
-  font-size: 2rem;
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  align-items: flex-start;
 }
 
-.ThrivingCommunity p {
-  color: white;
-  font-size: 1.5rem;
+.header h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #000;
 }
 
-.KnowMoreButton {
-  border: 1px solid white;
+.header h2 {
+  margin: 5px 0 0;
+  font-size: 18px;
+  color: #000;
+}
+
+h3 {
+  color: #000;
+}
+
+p {
+  line-height: 1.6;
+ 
+}
+
+.imagecontainer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.imagecontainer img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.benefitsBannerContainer {
+  position: relative;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.benefitsBanner {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.benefitsOverlayText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.benefitsOverlayText h3 {
+  margin: 0;
+  font-size: 24px;
+}
+
+ol {
+  padding-left: 20px;
+}
+
+ol li {
+  margin-bottom: 10px;
+}
+
+ol li p {
+  margin: 5px 0;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+ul li p {
+  margin: 5px 0;
+}
+
+.integrationContainer {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 5px;
+}
+
+.integrationHeader {
+  background-color: #d79f84;
+  padding: 10px;
+  border-radius: 5px 5px 0 0;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.integrationContent {
+  padding: 10px;
+}
+
+.joinNowSection {
+  background-color: #b0440e;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.joinNowButton {
+  background-color: #fff;
+  color: #d79f84;
+  border: 1px solid #d79f84;
   padding: 10px 20px;
-  font-size: 16px;
+  margin-top: 10px;
   cursor: pointer;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  font-size: 16px;
 }
 
-.KnowMoreButton:hover {
-  background-color: #d2776d;
+.joinNowButton:hover {
+  background-color: #d85e22;
   color: white;
-}
-
-@media (max-width: 1024px) {
-  .content {
-    grid-template-columns: 1fr;
-  }
-
-  .fullWidthBlock {
-    grid-column: span 1;
-  }
-
-  .bannerText h1 {
-    font-size: 1.5rem;
-  }
-
-  .bannerText h2 {
-    font-size: 1.2rem;
-  }
-
-  .introText {
-    font-size: 20px;
-  }
+  border: 1px solid #fff;
 }
 
 @media (max-width: 768px) {
-  .bannerText h1 {
-    font-size: 1rem;
+  .container {
+    padding: 10px;
+  }
+
+  .overlayText {
+    top: 40%;
+    left: 10%;
+    transform: translateY(-40%);
     text-align: left;
   }
 
-  .bannerText h2 {
-    font-size: .8rem;
+  .overlayText h3 {
+    font-size: 16px;
+    text-align: left;
   }
 
-  .introText {
+  .overlayText h2 {
+    font-size: 14px;
+  }
+
+  .benefitsOverlayText {
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+  }
+
+  .benefitsOverlayText h3 {
     font-size: 18px;
+  }
+
+  .header h1 {
+    font-size: 20px;
+  }
+
+  .header h2 {
+    font-size: 16px;
   }
 }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
+@media (max-width: 480px) {
+  .container {
+    padding: 5px;
   }
-  100% {
-    opacity: 1;
+
+  .overlayText {
+    top: 35%;
+    left: 10%;
+    transform: translateY(-35%);
+    text-align: left;
+  }
+
+  .overlayText h3 {
+    font-size: 14px;
+  }
+
+  .overlayText h2 {
+    font-size: 12px;
+  }
+
+  .benefitsOverlayText {
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+  }
+
+  .benefitsOverlayText h3 {
+    font-size: 16px;
+  }
+
+  .header h1 {
+    font-size: 18px;
+  }
+
+  .header h2 {
+    font-size: 14px;
   }
 }

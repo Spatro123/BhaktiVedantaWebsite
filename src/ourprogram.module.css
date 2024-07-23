@@ -57,6 +57,7 @@
 .pointsSection p {
     font-size: 1.3em;
     margin-bottom: 40px;
+    text-align: left;
 }
 
 .pointsGrid {

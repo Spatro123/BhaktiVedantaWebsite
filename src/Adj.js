@@ -1,64 +1,82 @@
 import React from 'react';
 import classes from './Yu.module.css';
-import banner from './header banner.jpg';
+import zenImage from './adhyatmic jagruti kendra.jpg';
+import headingPoster from './adhyatmic jagruti kendra (2).jpg';
+import benefitsBanner from './adhyatmic jagruti kendra (2).jpg'; 
 
-import event1 from './event1.png';
-import event2 from './event2.jpg';
-import event3 from './event3.png';
-
-import l1 from './l1.png';
-import l2 from './l2.png';
-import l3 from './l3.png';
-import l4 from './l4.png';
-import l5 from './l5.png';
-
-function App() {
+const AdhyatmikJagrutiKendra = () => {
   return (
     <div className={classes.container}>
-      <header>
-        <div className={classes.banner}>
-          <img src={banner} alt="Banner" className={classes.bannerImage} />
-          <div className={classes.bannerText}>
-            <h1>Welcome to Bhaktivedanta Adhyatmik Jagruti Kendra</h1>
-            <h2>Awakening Spirits, Shaping Futures, Enlightening Souls</h2>
-          </div>
+      <div className={classes.headingPosterContainer}>
+        <img src={headingPoster} alt="Heading Poster" className={classes.headingPoster} />
+        <div className={classes.overlayText}>
+          <h3>Adhyatmik Jagruti Kendra:</h3>
+          <h2>Awakening Spiritual Consciousness</h2>
         </div>
-      </header>
+      </div>
 
-      <p>At Bhaktivedanta Adhyatmik Jagruti Kendra, we are committed to awakening the spiritual consciousness, shaping futures, and enlightening souls. Our programs are designed to guide individuals on a transformative journey of self-discovery, inner growth, and spiritual enlightenment.</p>
+      <p>
+        Welcome to the Adhyatmik Jagruti Kendra at Bhaktivedanta International Academy for
+        Applied Spiritual Technology. Our center is dedicated to awakening spiritual consciousness
+        and promoting holistic development through a blend of spiritual teachings, meditation
+        practices, and personal growth strategies.
+      </p>
+      <h3>Program Overview:</h3>
+      <div className={classes.imagecontainer}>
+        <img src={zenImage} alt="Zen" />
+      </div>
+      <p>
+        The Adhyatmik Jagruti Kendra offers a range of programs designed to nurture spiritual
+        growth and personal well-being. Our unique approach integrates timeless spiritual wisdom
+        with modern practices, providing a holistic path to inner peace, mental clarity, and balanced
+        living.
+      </p>
+      <h3>Program Features:</h3>
+      <p>1. Holistic Success Pathway™ Framework:</p>
+      <p>Our flagship program framework, Holistic Success Pathway™, seamlessly integrates spiritual development with entrepreneurial and employability training. This comprehensive approach ensures that our participants achieve not only professional success but also spiritual fulfillment.</p>
+      <p>2. Spiritual Teachings:</p>
+      <p>Our programs are grounded in the profound teachings of the Bhagavad Gita and other Vedic scriptures. These teachings offer timeless wisdom for navigating life's challenges and finding inner peace.</p>
+      <p>3. Mantra Meditation:</p>
+      <p>Participants learn powerful mantra meditation techniques to enhance mental clarity, reduce stress, and foster emotional balance. Regular meditation practice is a cornerstone of our spiritual development programs.</p>
+      <p>4. Interactive Workshops:</p>
+      <p>Our workshops are designed to be interactive and engaging, offering practical insights into applying spiritual principles in daily life. Through discussions, group activities, and guided practices, participants deepen their understanding and experience.</p>
+      <p>5. Expert Guidance:</p>
+      <p>Courses are led by experienced spiritual teachers and practitioners who provide personalized guidance and support. This ensures a high standard of learning and fosters a supportive environment for spiritual growth.</p>
+      <p>6. Flexible Delivery Formats:</p>
+      <p>We offer our programs in both online and offline formats, providing flexibility to accommodate different learning preferences:</p>
+      <p>Online Learning: Live interactive sessions and pre-recorded lectures accessible from anywhere.</p>
+      <p>On-Site Training: In-person workshops and seminars at our campus or partner institutions.</p>
+      <div className={classes.imagecontainer}>
+        <img src={zenImage} alt="Zen" />
+      </div>
 
-      <section className={classes.content}>
-        <div className={classes.block}>
-          <img src={l1} alt="Icon 1" className={classes.icon} />
-          <h3>Awakening Spirits</h3>
-          <p>Our mission is to awaken the dormant spiritual consciousness within each individual and facilitate a deeper connection with the divine. Through spiritual practices, meditation, and introspection, we help participants explore the depths of their souls and uncover the eternal truths that lie within.</p>
+      <div className={classes.integrationContainer}>
+        <div className={classes.integrationHeader}>
+          Integration with the Success Pathway™ Framework:
         </div>
-        <div className={classes.block}>
-          <img src={l2} alt="Icon 2" className={classes.icon} />
-          <h3>Shaping Futures</h3>
-          <p>We believe that spiritual enlightenment is the key to shaping a brighter future for individuals and society as a whole. Our programs empower participants to transcend their limitations, overcome obstacles, and manifest their highest potential in all areas of life. By instilling values of compassion, integrity, and service, we inspire individuals to become agents of positive change in the world.</p>
+        <div className={classes.integrationContent}>
+          <p>
+            The Holistic Success Pathway™ framework is designed to provide a structured yet flexible path to holistic success. The integration of Adhyatmik Jagruti Kendra into this framework includes:
+          </p>
+          <p><strong>Spiritual Foundations:</strong> Core spiritual teachings from the Bhagavad Gita, Vedic scriptures, and other spiritual texts form the foundation of the Success Pathway™.</p>
+          <p><strong>Meditation Practices:</strong> Regular mantra meditation sessions are integrated into the curriculum, promoting mental clarity and emotional balance.</p>
+          <p><strong>Personal Growth:</strong> Emphasis on personal growth and self-awareness, encouraging participants to explore their inner potential and develop a deeper understanding of themselves.</p>
+          <p><strong>Ethical and Balanced Living:</strong> Guidance on ethical living and balanced decision-making, ensuring that participants align their actions with their values and principles.</p>
+          <p>Join Us at Adhyatmik Jagruti Kendra</p>
+          <p>
+            We invite you to embark on a transformative journey with Adhyatmik Jagruti Kendra. Whether you are seeking spiritual growth, personal development, or a deeper connection with your inner self, our programs are designed to meet your needs and aspirations.
+          </p>
         </div>
-        <div className={classes.block}>
-          <img src={l3} alt="Icon 3" className={classes.icon} />
-          <h3>Enlightening Souls</h3>
-          <p>At Bhaktivedanta Adhyatmik Jagruti Kendra, we are dedicated to enlightening souls and illuminating the path to self-realization. Through the study of ancient wisdom, sacred texts, and spiritual teachings, we provide participants with the knowledge and tools they need to embark on a journey of self-discovery and inner transformation.</p>
+      </div>
+
+      <div className={classes.joinNowSection}>
+        Take the first step towards a fulfilling and balanced life. Enroll today and become a part of the Bhaktivedanta International Academy community. Together, let's awaken our spiritual consciousness and build a brighter, more harmonious world.
+        <div>
+          <button className={classes.joinNowButton}>Join Now</button>
         </div>
-        <div className={`${classes.block} ${classes.fullWidthBlock}`}>
-         
-          <p>Join us at Bhaktivedanta Adhyatmik Jagruti Kendra and embark on a profound journey of spiritual awakening, personal growth, and enlightenment. Together, let's awaken spirits, shape futures, and enlighten souls, as we strive to create a world filled with peace, harmony, and spiritual wisdom.</p>
-        </div>
-      </section>
-      <footer>
-        <img src={l5} alt="Icon 5" className={classes.icon1} />
-        <h3>Join Us</h3>
-        <p>Join us at Bhaktivedanta Adhyatmik Jagruti Kendra and embark on a profound journey of spiritual awakening, personal growth, and enlightenment. Together, let's awaken spirits, shape futures, and enlighten souls, as we strive to create a world filled with peace, harmony, and spiritual wisdom.</p>
-      </footer>
-      <div className={classes.ThrivingCommunity}>
-        <p>Become a Part of Our Thriving Community</p>
-        <button className={classes.KnowMoreButton}>JOIN NOW</button>
       </div>
     </div>
   );
-}
+};
 
-export default App;
+export default AdhyatmikJagrutiKendra;

@@ -14,9 +14,10 @@ const Blog = () => {
           <img src={banner} alt="Blog Banner" className={classes.bannerImage} />
           <div className={classes.bannerText}>
             <h1>Our Blog & Insight</h1>
-            <p>We delve into the world of EHS, exploring the latest trends, regulations, and best practices that drive responsible business operations.</p>
           </div>
         </div>
+        <p>We delve into the world of EHS, exploring the latest trends, regulations, and best practices that drive responsible business operations.</p>
+
         <div className={classes.categories}>
           <button className={`${classes.category} ${classes.categoryActive}`}>All</button>
           <button className={classes.category}>Start-Ups</button>

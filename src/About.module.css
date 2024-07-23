@@ -1,3 +1,18 @@
+/* Ensure universal box-sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove margin and padding from html and body, prevent horizontal scrolling */
+html, body {
+  overflow-x: hidden; 
+  margin: 0;
+  padding: 0;
+}
+
+/* Container styling */
 .aboutContainer {
   max-width: 1400px;
   margin: 0 auto;
@@ -5,13 +20,13 @@
 
 .banner {
   position: relative;
-    text-align: left;
-    background-image: url('header\ banner.jpg');
-    background-size: contain; 
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 400px; 
-    overflow: hidden;
+  text-align: left;
+  background-image: url('header\ banner.jpg');
+  background-size: contain; 
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 400px; 
+  overflow: hidden;
   animation: fadeIn 2s;
 }
 
@@ -147,23 +162,19 @@
 }
 
 .quote {
-  position: absolute;
-  
-  margin-top: 100px;
   background-color: rgba(221, 213, 213, 0.8);
   color: rgb(0, 0, 0);
   padding: 10px;
   border-radius: 8px;
   font-size: 20px;
   width: 100%;
+  margin-top: 10px; /* Added margin-top to separate from image */
 }
 
 .textContainer {
   flex: 1;
   padding-left: 20px;
   color: white;
-  display: grid;
-  height: 100vh;
 }
 
 .para {
@@ -230,7 +241,6 @@ p {
 
 .team {
   display: flex;
-  
   gap: 20px;
   justify-content: center; 
 }
@@ -238,17 +248,15 @@ p {
 .teamBox {
   display: flex;
   justify-content: space-between;
-  
   gap: 50px;
   border-radius: 5px;
 }
 
 .teamMember {
   display: grid;
-   justify-content: center;
+  justify-content: center;
   align-items: center;
   padding: 20px;
- 
   border-radius: 8px;
   background: transparent;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -256,10 +264,7 @@ p {
   transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
 }
 
-.teamMember h3{
-  text-align: center;
-}
-.teamMember p{
+.teamMember h3, .teamMember p {
   text-align: center;
 }
 
@@ -284,13 +289,14 @@ p {
 
   .tagline {
     top: 50%;
-    left: 50%;
+    left: 40%;
     transform: translate(-50%, -50%);
-    text-align: center;
+    text-align: left;
   }
 
   .tagline h2 {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
+    text-align: left;
   }
 
   .tagline p {
@@ -327,5 +333,9 @@ p {
   .teamMember {
     width: 100%;
     margin-bottom: 20px;
+  }
+
+  .quote {
+    margin-top: 20px; /* Move the quote below the image */
   }
 }

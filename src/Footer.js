@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import classes from './Footer.module.css';
 import t1 from "./twitter (1).png";
 import t3 from "./youtube (3).png";
@@ -56,10 +57,7 @@ function Footer() {
       </div>
       <div className={classes.contactAndLinks}>
         <div className={classes.contactInfo}>
-          <div className={classes.text}>
-            <h2>Reach out to us</h2>
-            <h2>Get your questions answered about us..</h2>
-          </div>
+          <h2>Reach out to us</h2>
           <div className={classes.details}>
             <div className={classes.contactItem}>
               <img src={s3} alt="Phone" className={classes.contactIcon} />
@@ -78,19 +76,19 @@ function Footer() {
         <div className={classes.footerLinks}>
           <div className={classes.footerSection}>
             <h2>Quick Links</h2>
-            <p>Home</p>
-            <p>About Us</p>
-            <p>Our Programs</p>
-            <p>Impact</p>
-            <p>Blog</p>
-            <p>Contact Us</p>
-            <p>FAQs</p>
+            <Link to="/" className={classes.footerLink}>Home</Link>
+            <Link to="/about" className={classes.footerLink}>About Us</Link>
+            <Link to="/ourprogram" className={classes.footerLink}>Our Programs</Link>
+            <Link to="/impact" className={classes.footerLink}>Impact</Link>
+            <Link to="/blog" className={classes.footerLink}>Blog</Link>
+            <Link to="/contact" className={classes.footerLink}>Contact Us</Link>
+            <Link to="/faq" className={classes.footerLink}>FAQs</Link>
           </div>
           <div className={classes.footerSection}>
             <h2>Get Involved</h2>
-            <p>Partner With Us</p>
-            <p>Volunteer Opportunities</p>
-            <p>Career</p>
+            <Link to="/partner" className={classes.footerLink}>Partner With Us</Link>
+            <Link to="/volunteer" className={classes.footerLink}>Volunteer Opportunities</Link>
+            <Link to="/career" className={classes.footerLink}>Career</Link>
           </div>
           <div className={classes.footerSection}>
             <h2>Follow Us</h2>
@@ -114,10 +112,10 @@ function Footer() {
       <div className={classes.footerBottom}>
         <p>© 2024 Bhaktivedanta International Academy for Applied Spiritual Technology. All rights reserved.</p>
         <p>
-          <a href="#" className={classes.footerLink}>Privacy Policy</a> |
-          <a href="#" className={classes.footerLink}>Terms & Conditions</a> 
+          <Link to="/privacyPolicy" className={classes.footerLink}>Privacy Policy</Link> |
+          <Link to="/terms" className={classes.footerLink}>Terms & Conditions</Link>
         </p>
-        <a href="#" className={classes.footerLink}>Powered by DiracAI Private Limited</a>
+        <a href="https://www.diracai.com" className={classes.footerLink} target="_blank" rel="noopener noreferrer">Powered by DiracAI Private Limited</a>
       </div>
     </footer>
   );
